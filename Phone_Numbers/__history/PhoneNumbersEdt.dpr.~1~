@@ -1,0 +1,14 @@
+program PhoneNumbersEdt;
+
+uses
+  Forms,
+  frmPhoneNumbers in 'frmPhoneNumbers.pas' {FormPhoneNumbers};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFormPhoneNumbers, FormPhoneNumbers);
+  Application.Run;
+end.
